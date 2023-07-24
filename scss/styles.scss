@@ -1,0 +1,84 @@
+@use '../../../scss/colors' as *;
+
+#activity-completion {
+    min-height: 18em;
+
+    .sorting-icon {
+        width: .6em;
+        fill: none;
+    }
+}
+
+#activity-filter .filter {
+    padding: 0 1em .4em 0;
+    label {
+        margin: 0 0 0 .4em;
+    }
+}
+
+#activity-completion-head {
+    .sorting-link {
+        text-decoration: underline;
+    }
+    .sorted {
+        .sorting-icon {
+            fill: #000;
+        }
+        &[data-order='ascending'] .sorting-icon {
+            transform: scale(1, -1);
+        }
+    }
+    th {
+        white-space: nowrap;
+        &[data-criterium] {
+            &,
+            abbr { // Needed for specificity.
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+#quiz-entries-table {
+    table-layout: auto;
+
+    th,
+    td {
+        text-align: right;
+    }
+
+    .activity {
+        text-align: left;
+    }
+
+    td.total,
+    td.done,
+    td.open {
+        font-family: monospace;
+    }
+
+    .total,
+    .done,
+    .open {
+        max-width: 5.5em;
+    }
+
+    .done {
+        color: $cyan;
+    }
+
+    .open {
+        color: $orange;
+        padding-left: 0;
+    }
+
+    .bar-chart {
+        min-width: 5rem;
+        height: 1.4em;
+        background-color: $orange;
+        .done-bar {
+            height: 100%;
+            background-color: $cyan;
+        }
+    }
+}

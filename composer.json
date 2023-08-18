@@ -1,5 +1,5 @@
 {
-    "name": "llttugraz/lytix_completions",
+    "name": "llttugraz-lytix/moodle-lytix_completions",
     "description": "This shows which Activities have been marked as completed by participants.",
     "keywords": [
         "moodle",
@@ -17,8 +17,8 @@
     "require": {
         "moodle/moodle": "3.11 - 4.1",
         "llttugraz/moodle-local_lytix": "*",
-        "llttugraz/lytix_logs": "*",
-        "llttugraz/lytix_config": "*",
-        "llttugraz/lytix_helper": "*"
+        "llttugraz-lytix/moodle-lytix_logs": "*",
+        "llttugraz-lytix/moodle-lytix_config": "*",
+        "llttugraz-lytix/moodle-lytix_helper": "*"
     }
 }
